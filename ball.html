@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/game.css">
+	<title>Game Page</title>
+</head>
+<style>
+	.bg__header{
+		display: none;
+	}
+	body{
+		overflow-x: hidden;
+	}
+</style>
+<body>
+	<section id="products">
+		<div class="bg__header"></div>
+		<header class="header__products">
+			<a href="#"><div class="logo__p9__white"></div></a>
+			<p class="header__title blockon">выберите три сферы жизни, а мы заглянем в вашу новую реальность.</p>
+			<a href="#"><div class="logo__lentaru"><p class="title__lentaru">LENTA.RU</p></div></a>
+			<p class="header__title blockoff">выберите три сферы жизни, а мы заглянем в вашу новую реальность.</p>
+		</header>
+	</section>
+
+	<section class="game">
+		<div class="christmas__ball big behind" id="ball__love">
+			<div class="ribbon"></div>
+			<button onclick="choiceLove()" class="ball ball__yellow"><h3>любовь</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball small" id="ball__career">
+			<div class="ribbon"></div>
+			<button onclick="choiceCareer()" class="ball ball__orange"><h3>карьера</h3></button>
+			<div class="ball__head"></div>
+		</div>	
+
+		<div class="christmas__ball small behind" id="ball__energe">
+			<div class="ribbon"></div>
+			<button onclick="choiceEnerge()" class="ball ball__orange"><h3>энергия</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball big" id="ball__family">
+			<div class="ribbon"></div>
+			<button onclick="choiceFamily()" class="ball ball__yellow"><h3>семья</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball big" id="ball__money">
+			<div class="ribbon"></div>
+			<button onclick="choiceMoney()" class="ball ball__orange"><h3>деньги</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball small" id="ball__sport">
+			<div class="ribbon"></div>
+			<button onclick="choiceSport()" class="ball ball__orange"><h3>спорт</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball small behind" id="ball__hobby">
+			<div class="ribbon"></div>
+			<button onclick="choiceHobby()" class="ball ball__yellow"><h3>хобби</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball small" id="ball__beauty">
+			<div class="ribbon"></div>
+			<button onclick="choiceBeauty()" class="ball ball__yellow"><h3>красота</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball big behind" id="ball__health">
+			<div class="ribbon"></div>
+			<button onclick="choiceHealth()" class="ball ball__orange"><h3>здоровье</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball small" id="ball__tourism">
+			<div class="ribbon"></div>
+			<button onclick="choiceTourism()" class="ball ball__orange"><h3>туризм</h3></button>
+			<div class="ball__head"></div>
+		</div>
+
+		<div class="christmas__ball small behind" id="ball__home">
+			<div class="ribbon"></div>
+			<button onclick="choiceHome()" class="ball ball__yellow"><h3>дом</h3></button>
+			<div class="ball__head"></div>
+		</div>
+	</section>
+
+	<section>
+		<button onclick="predict()" class="btn__generate disabled" id="btn__generate" disabled><p>Сгенерировать новую реальность</p></button>
+	</section>
+
+	<script type="text/javascript" src="js/ball.js"></script>
+</body>
+</html>
