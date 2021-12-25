@@ -179,6 +179,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 @media (max-width: 1440px) {
   .about {
     height: 104px;
@@ -707,7 +708,7 @@ body .ya-share2__badge {
   width: 97px;
   height: 97px;
   bottom: 34px;
-
+  justify-content: end;
 }
 .maindetails .about_circle {
   transform: rotate(180deg);
@@ -725,22 +726,31 @@ body .ya-share2__badge {
 .maindetailswrapper .header{
   position: absolute;
 }
-@media (max-width: 1440px) {
-  .maindetails {
-    flex-direction: column;
+.maindetails_content{
+  position: relative;
+}
+.btn-heart{
+  left: -35%;
+  bottom: 0;
+}
+.btn-about{
+  right: -35%;
+  bottom: 0;
+}
+@media (max-width: 1755px) {
+  .btn-heart{
+    left: -18%;
+    bottom: 0;
   }
+  .btn-about{
+    right: -18%;
+    bottom: 0;
+  } 
+}
+@media (max-width: 1440px) {
   .maindetails .special {
     top: 37px;
     right: 74px;
-  }
-  .maindetails_content {
-    height: 833px;
-    width: 460px;
-    flex-direction: column;
-  }
-  .maindetails_content_descr {
-    height: 466px;
-    width: 460px;
   }
   .maindetails_content_descr h2 {
     font-size: 40px;
@@ -758,6 +768,28 @@ body .ya-share2__badge {
     align-items: center;
     justify-content: center;
   }
+  .maindetails_content{
+    flex-direction: column;
+    align-items: center;
+    max-height: unset;
+  }
+  .btn-about{
+    bottom: 0 !important;
+    right: 0;
+  }
+  .btn-heart{
+    bottom: 0 !important;
+    left: 0;
+  }
+  .maindetails{
+    height: unset;
+  }
+  .maindetails_content_descr{
+    width: 90%;
+  }
+  .button-details{
+    margin: auto;
+  }
 }
 @media (max-width: 768px) {
   .maindetails {
@@ -773,11 +805,11 @@ body .ya-share2__badge {
     background-image: url(../icons/poklonnay-min2.svg);
   }
   .maindetails_content {
-    width: 335px;
+    width: 460px;
     height: 875px;
   }
   .maindetails_content_descr {
-    width: 335px;
+    width: 100%;
     height: 508px;
   }
   .maindetails_content_descr h2 {
@@ -807,6 +839,17 @@ body .ya-share2__badge {
     bottom: 40px;
     right: 26px;
     justify-content: end;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-about.about{
+    bottom: -5% !important;
+  }
+  .btn-heart{
+    bottom: -5% !important;
+  }
+  .maindetails_content_descr{
+    width: 95%;
   }
 }
 .ballsection {
@@ -2055,7 +2098,7 @@ color: #FFFFFF;
     height: 1024px;
   }
   .beautydetails .share {
-    bottom: 61px;
+    bottom: 90px;
     left: 74px;
     width: 44px;
     height: 44px;
