@@ -385,6 +385,12 @@ body .ya-share2__badge {
 .main .special {
   background-image: none;
 }
+.mainwrapper .about{
+  justify-content: start;
+}
+.main.animate__animated .about{
+  justify-content: end; 
+}
 @media (max-width: 1440px) {
   .main_content {
     max-width: 620px;
@@ -682,6 +688,7 @@ body .ya-share2__badge {
 }
 .maindetails_content {
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
   width: 1020px;
   max-height: 603px;
@@ -730,7 +737,7 @@ body .ya-share2__badge {
 }
 .btn-heart{
   left: -35%;
-
+  bottom: 0;
 }
 .btn-about{
   right: -35%;
@@ -739,6 +746,7 @@ body .ya-share2__badge {
 @media (max-width: 1755px) {
   .btn-heart{
     left: -18%;
+    bottom: 0;
   }
   .btn-about{
     right: -18%;
@@ -762,6 +770,7 @@ body .ya-share2__badge {
     height: 339px;
     align-self: center;
     order: -1;
+    margin-top: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -772,9 +781,11 @@ body .ya-share2__badge {
     max-height: unset;
   }
   .btn-about{
+    bottom: 0 !important;
     right: 0;
   }
   .btn-heart{
+    bottom: 0 !important;
     left: 0;
   }
   .maindetails{
@@ -823,6 +834,7 @@ body .ya-share2__badge {
   .maindetails_content_img {
     width: 271px;
     height: 324px;
+    padding-top: 0;
   }
   .maindetails .share {
     bottom: 39px;
@@ -838,23 +850,26 @@ body .ya-share2__badge {
     justify-content: end;
   }
 }
-@media screen and (max-width: 480px) {
-  
-  .maindetails_content_descr{
-    width: 95%;
-  }
-}
-@media screen and (min-height: 1200px){
+@media screen and (min-height: 1200px) {
   .maindetails_content{
     justify-content: center;
   }
-}
-@media screen and (max-height: 580px){
   .btn-about{
-    bottom: -5% !important; 
+    bottom: 5% !important;
+  }
+  .btn-heart{
+    bottom: 5% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-about.about{
+    bottom: -5% !important;
   }
   .btn-heart{
     bottom: -5% !important;
+  }
+  .maindetails_content_descr{
+    width: 95%;
   }
 }
 .ballsection {
